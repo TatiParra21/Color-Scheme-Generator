@@ -1,0 +1,94 @@
+
+html, main, body,#color-input{
+    height: 100%;
+}
+/* width 100% */
+html, main, body{
+    width:100%
+}
+*{
+    box-sizing: border-box;
+}
+
+body{ 
+    text-align: center;
+    background: peru;
+}
+/* display */
+main, body,.color-name-pair, #picker-div,#copy-message{
+    display:flex;
+}
+
+/* flex-direction: column */
+main, body,.color-name-pair,#copy-message{
+    flex-direction: column;
+}
+
+header, body{
+    margin:0;
+}
+h1{
+    margin:0.5em;
+}
+#picker-div{
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.4em;
+    height:10%;
+} 
+
+.color-palatte{
+    height:90%;
+  } 
+
+#color-input{
+    width:30%;
+}
+
+#color-select-box,#choose-color-btn{
+    font-size: 1.1rem;
+    width:35%;
+}
+
+#color-grid-sec{
+    display: grid;
+    flex-grow:1;
+    grid-template:1fr 1fr/repeat(4,1fr);  
+}
+.color-number,#color-select-box,#choose-color-btn,#copy-message{
+    font-weight: bold;
+}
+.color-number, #copy-message{
+    border: 2px black solid;
+    background: white;
+    
+}
+.color-number{
+    padding: 0.5em;
+}
+.color-number:hover, 
+.color-palatte:hover, 
+#color-select-box:hover,
+#choose-color-btn:hover,
+#color-input:hover{
+    cursor: pointer;
+}
+
+#copy-message{
+    position: fixed;
+   inset:0;
+    width:50%;
+    height: 7%;
+    margin: auto;
+    justify-content: center;
+    font-size:1.3rem;
+}
+@media(min-width:800px){
+    #copy-message{
+       inset:auto 0 40px 0;
+        width:25%;
+        margin: 0 auto;
+        font-size:1.2rem;
+        
+    }
+}  

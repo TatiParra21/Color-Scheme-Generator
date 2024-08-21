@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+
+    </head>
+    <body>
+        <header>
+            <h1>Color Scheme Generator</h1>
+        </header>
+        <main>
+            <div id="picker-div">
+                <input id="color-input" type="color">
+                <select name="color-mode" id="color-select-box">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="choose-color-btn">Get color scheme</button>
+            </div>
+
+            <section id="color-grid-sec">
+
+
+
+            </section>
+            <span id="copy-message">Hex Value Copied</span>
+        </main>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
